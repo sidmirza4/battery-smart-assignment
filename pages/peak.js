@@ -13,11 +13,11 @@ export default function Home() {
 			</Head>
 
 			<Grid container>
-				<Grid item sx={{ flexShrink: 0 }}>
+				<Grid item sx={{ flexShrink: 0 }} xs={2}>
 					<Sidebar />
 				</Grid>
 
-				<Grid item sx={{ flexGrow: 1 }}>
+				<Grid item sx={{ flexGrow: 1 }} xs={10}>
 					<MainContent />
 				</Grid>
 			</Grid>

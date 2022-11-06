@@ -36,11 +36,11 @@ export default function MainContent() {
 				</Box>
 
 				<Grid container mt={3} spacing={2}>
-					<Grid item xs={12} md={4}>
+					<Grid item md={4}>
 						<CreateAlert />
 					</Grid>
 
-					<Grid item xs={12} md={8}>
+					<Grid item md={8}>
 						<Table />
 					</Grid>
 				</Grid>

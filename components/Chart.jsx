@@ -1,6 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Charts = dynamic(() => import("react-apexcharts"), { ssr: false });
 
@@ -35,15 +35,13 @@ const Chart = () => {
 				width: "100%",
 				bgcolor: "#fff",
 				borderRadius: 2,
+				p: 3,
 			}}
 		>
-			<Charts
-				options={options}
-				series={series}
-				type="line"
-				width={600}
-				height="300"
-			/>
+			<Typography variant="h6" mb={1}>
+				Power Cost
+			</Typography>
+			<Charts options={options} series={series} type="area" height="300" />
 		</Box>
 	);
 };
